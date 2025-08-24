@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Tomislav Sinanović - portfolio</title>
+   <link rel="preconnect" href="https://fonts.googleapis.com">
+   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+   <link href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
+   <link href="https://fonts.googleapis.com/css2?family=Archivo+Black&display=swap" rel="stylesheet">
+   <link href="https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+   <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap" rel="stylesheet">
+   <link rel="stylesheet" type="text/css" href="style.css">
+   <script src="script.js"></script>
+</head>
+<body>
+   <nav>
+      <div class="izbornik">
+         <a href="#hero">Naslovna</a>
+         <a href="#about">O meni</a>
+         <a href="#portfolio">Portfolio</a>
+         <a href="#kontakt">Kontakt</a>
+         <img src="slike/hamb.png" class="hamb" width="50px" onclick="sidebar()">
+      </div>
+      <div class="sidebar">
+         <img src="slike/x.png" class="izlaz" width="50px" onclick="sakrij()">
+         <a href="#hero">Naslovna</a>
+         <a href="#about">O meni</a>
+         <a href="#portfolio">Portfolio</a>
+         <a href="#kontakt">Kontakt</a>
+      </div>
+   </nav>
+   <section id="hero" class="hero">
+      <div class="logo">
+         <img src="slike/potpis_bijeli.png" alt="Logo">
+      </div>
+      <div class="desna-strana">
+         <div class="hero-text">
+            <h1>NEKA <br><span>IDEJA</span> POSTANE <span>STVARNOST</span></h1>
+            <div id="prompt" class="prompt">
+               <div class="prompt-sadrzaj">
+                  <p>Unesi svoje ime:</p>
+                  <input type="text" id="ime">
+                  <p>Odaberi spol:</p>
+                  <label><input type="radio" name="spol" value="musko" checked> Muško</label>
+                  <label><input type="radio" name="spol" value="zensko"> Žensko</label>
+                  <br>
+                  <button id="ok">OK</button>
+               </div>
+            </div>
+            <p id="output"></p>
+         </div>
+         <div class="cta">
+            <h2>Trebaš uslugu?</h2>
+            <p>Imaš ideju ali ne znaš kako je realizirati i pretvoriti u dizajn, javi mi se!</p>
+            <a href="#kontakt" class="hero-btn">Kontaktiraj me</a>
+         </div>
+      </div>
+   </section>
+   <section id="about" class="about">
+      <div class="naslov">
+         <h2>O meni</h2>
+      </div>
+      <div class="about-container">
+         <div class="about-img">
+            <img src="slike/profilna2.png" alt="profil" width="500px">
+         </div>
+         <div class="about-card-container">
+            <div class="about-card">
+               <div class="ikone ikona"></div>
+               <h3>Podaci</h3>
+               <p>Ja sam <b>Tomislav Sinanović, web i grafički dizajner</b>. Studiram na <b>Grafičkom fakultetu u Zagrebu</b>. Tu sam da ti pomognem
+                  da tvoje ideje postanu proizvod koji privlači pažnju i donosi željene rezultate.
+               </p>
+            </div>
+            <div class="about-card">
+               <div class="ikone ikona2"></div>
+               <h3>Obrazovanje</h3>
+               <p><b>VSS:</b> Grafički fakultet, Sveučilište u Zagrebu,
+                  smjer: Tehničko-tehnološki (2022. – ) <br><br>
+                  <b>SSS:</b> Srednja mješovita škola Žepče,
+                  zanimanje: Web dizajner (2018. – 2022.)
+               </p>
+            </div>
+            <div class="about-card">
+               <div class="ikone ikona3"></div>
+               <h3>Hobiji</h3>
+               <p>Volim se baviti <b>fotografijom</b>. Trenutno koristim <b>Canon R50 EOS</b>, uz 18-45mm objektiv. Zanima me i
+                  <b>videoprodukcija</b>, pa planiram u narednom periodu razvijati svoje vještine u tom smjeru, i naravno <b>sport</b> uvijek i zauvijek.
+               </p>
+            </div>
+            <div class="about-card">
+               <div class="ikone ikona4"></div>
+               <h3>Vještine</h3>
+               <p>Alati, softweri i tehnologije koje koristim u radu:</p>
+               <p><b>HTML 5, CSS 3, JavaScript, GitHub</b></p>
+               <p><b>Adobe Photoshop, Illustrator, Premier Pro, InDesign</b></p>
+            </div>
+         </div>
+      </div>
+   </section>
+   <section id="portfolio" class="portfolio">
+      <div class="naslov">
+         <h2>Portfolio</h2>
+      </div>
+      <div class="website-container">
+         <div class="wsc1-lijevo"> </div>
+         <div class="wsc-desno">
+            <div class="portfolio-text">
+               <h3>Fast food "TACOS"</h3>
+               <p>Maturski rad. Tema je bila Izrada Web Site-a (Komercijalno web sjedište). Sjedište je rađeno za "imaginarnog"
+                  klijenta, meksički restoran "Tacos". Osobni cilj je bio izraditi malo kompleksnije web sjedište
+                  po pitanju količine sadržaja te omogućiti da isto bude funkcionalno, dizajnerski privlačno i responzivno. 
+                  Rad je obuhvaćao izradu grafičkog rješenja (izrada logotipa,
+                  odabir boja i fontova, priprema fotografija) i web razvoj (implementacija HTML-a i CSS-a).  
+               </p>
+               <a href="https://tomislavsinanovic.github.io/Fast-food-Tacos/" class="portfolio-btn" target="_blank">Posjeti site</a>
+            </div>
+         </div>
+      </div>
+      <div class="website-container2">
+         <div class="wsc2-lijevo"> </div>
+         <div class="wsc-desno">
+            <div class="portfolio-text">
+               <h3>Frizerski salon Cosa Nostra</h3>
+               <p>Projekt je izrađen u sklopu kolegija na fakultetu - Multimedijske komunikacije 1, zadatak
+                  je bio postupni napredak osobnog web projekta koji bi uključivao elemente obrađene po
+                  nastavnim jedinicama. Odlučio sam se za izradu web sjedišta za frizerski salon. Osim
+                  web razvoja izrada je uključivala i kreiranje grafičkog rješenja (osmišljavanje i izrada
+                  logotipa, odabir fotografija, boja i fontova). Rezultat je funkcionalno, smisleno
+                  i responzivno web sjedište.
+               </p>
+               <a href="https://tomislavsinanovic.github.io/Barbershop-Cosa-Nostra/" class="portfolio-btn" target="_blank">Posjeti site</a>
+            </div>
+         </div>
+      </div>
+      <div class="dizajn-container">
+         <div class="portfolio-card">
+            <div class="slika"></div>
+            <div class="card-text">
+               <h3>Plakat</h3>
+               <p> Plakat je izrađenu sklopu kolegija na fakultetu Socijologija dizajna, gdje su se kroz prikupljanje podataka i analizu o nekim društvenim
+                  problemima kreirali različiti grafički vizuali koji bi podizali svijest, poticali na odgovornost i promišljanje. 
+               </p>
+               <a href="slike/plakat.jpg" class="portfolio-btn" target="_blank">Pogledaj</a>
+            </div>
+         </div>
+         <div class="portfolio-card">
+            <div class="slika2"></div>
+            <div class="card-text">
+               <h3>Društvena igra</h3>
+               <p>Društvena igra "Leteća odiseja". Izrađena u sklopu kolegija na fakultetu Dizajn grafičkih medija. Cilj je bio 
+                  dizajnirati sljedeće grafičke elemente: logotip, ikone, kartice i uzorke uz naglasak na pravilnu i simetričnu konstrukciju logotipa. 
+               </p>
+               <a href="slike/lo_mock.jpg" class="portfolio-btn" target="_blank">Pogledaj</a>
+            </div>
+         </div>
+         <div class="portfolio-card">
+            <div class="slika3"></div>
+            <div class="card-text">
+               <h3>Autoportret</h3>
+               <p>Zadatak je bio pokazati sebe kroz autoportret. Ja sam se odlučio za spoj stvarnosti i kreativnosti, kombinaciju digitalnog "crteža" i fotografije.
+                  Prvi rad izrađen u Adobe Photoshopu ikada. 
+               </p>
+               <a href="slike/Autoportret.jpg" class="portfolio-btn" target="_blank">Pogledaj</a>
+            </div>
+         </div>
+         <div class="portfolio-card">
+            <div class="slika4"></div>
+            <div class="card-text">
+               <h3>Logo</h3>
+               <p>Logo za barbershop Cosa Nostra, želja mi je bila osmisliti upečatljiv logo koji će odražavati muževnost, stil, 
+                  eleganciju i profesionalizam. Kroz spoj elemenata koji simboliziraju gospodski lik (šešir, brkovi, kravata) i frizerskih škara,
+                  postignut je dizajn koji spaja samu djelatnost i ime salona.  
+               </p>
+               <a href="slike/logo_mock.jpg" class="portfolio-btn" target="_blank">Pogledaj</a>
+            </div>
+         </div>
+         <div class="portfolio-card">
+            <div class="slika5"></div>
+            <div class="card-text">
+               <h3>Objave za društvene mreže</h3>
+               <p>Objave su namijenjene za promociju nove mobilne aplikacije za digitaliziranje kartica 
+                  lojalnosti i kataloga - "Štediša.ba" Cilj je bio na kreativan način predstaviti aplikaciju. 
+                  Vizuali i poruke kreirani su tako da privuku pažnju i izgrade prepoznatljiv identitet brenda. 
+               </p>
+               <a href="slike/posts_mock.jpg" class="portfolio-btn" target="_blank">Pogledaj</a>
+            </div>
+         </div>
+      </div>
+   </section>
+   <section id="kontakt" class="kontakt">
+      <div class="naslov">
+         <h2>Kontakt</h2>
+      </div>
+      <div class="fcontainer">
+         <div class="form">
+            <div class="contact-form">
+               <form action="">
+                  <label for="">IME I PREZIME</label>
+                  <input type="text" name="name" class="input" />
+                  <label for="">E-MAIL</label>
+                  <input type="email" name="email" class="input" />
+                  <label for="">BROJ MOBITELA</label>
+                  <input type="tel" name="phone" class="input" />
+                  <label for="">VAŠA PORUKA</label>
+                  <textarea class="input"></textarea>
+                  <div class="dugmici">
+                     <input type="submit" value="Pošalji" class="contact-btn" />
+                     <input type="reset" value="Očisti" class="contact-btn" />
+                  </div>
+               </form>
+            </div>
+            <div class="contact-info">
+               <div>
+                  <p>Trebaš pomoć?</p>
+                  <p>Imaš pitanje, ideju ili poslovnu ponudu?</p>
+               </div>
+               <h3>Osim forme možeš mi se javiti putem društvenih mreža i e-maila.</h3>
+               <div class="info">
+                  <a href="https://www.facebook.com/" target="_blank"><img src="slike/facebook.png" alt="" width="50px"></a>
+                  <a href="https://www.instagram.com/" target="_blank"><img src="slike/instagram.png" alt="" width="50px"></a>
+                  <a href="https://www.linkedin.com/feed/" target="_blank"><img src="slike/linkedin.png" alt="" width="50px"></a>
+                  <p>tomislavsinanovic@gmail.com</p>
+               </div>
+            </div>
+         </div>
+      </div>
+   </section>
+   <footer>
+      <div class="footer-logo">
+         <img src="slike/potpis_bijeli.png" alt="" width="400px">
+      </div>
+      <h3>Copyright &copy; 2025 Tomislav Sinanović</h3>
+   </footer>
+</body>
+</html>
